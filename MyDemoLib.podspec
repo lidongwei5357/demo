@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   
   s.homepage         = 'https://github.com/lidongwei/MyDemoLib'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lidongwei' }
+  s.author           =  'lidongwei'
   s.source           = { :git => 'https://github.com/lidongwei5357/demo.git', :tag => s.version.to_s }
   
   s.xcconfig     = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
@@ -46,7 +46,6 @@ Pod::Spec.new do |s|
     ss.vendored_frameworks = 'Framework/MyDemoLib.xcframework'
     ss.preserve_paths      = 'Framework/*'
   end
-  
   
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
