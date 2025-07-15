@@ -8,35 +8,57 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyDemoLib'
-  s.version          = '0.1.0'
+  s.version          = 'MyDemoLib'
   s.summary          = 'A short description of MyDemoLib.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/lidongwei/MyDemoLib'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lidongwei' => 'lidongwei@youyueplay.com' }
-  s.source           = { :git => 'https://github.com/lidongwei/MyDemoLib.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'MyDemoLib/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MyDemoLib' => ['MyDemoLib/Assets/*.png']
-  # }
-
+  s.description      = <<-DESC
+  TODO: Add long description of the pod here.
+  DESC
+  
+  s.homepage         = 'https://github.com/lidongwei/MyDemoLib'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'lidongwei' }
+  s.source           = { :git => 'https://github.com/lidongwei5357/demo.git', :tag => s.version.to_s }
+  
+  s.xcconfig     = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
+  
+  s.requires_arc = true
+  
+  s.swift_version = '5.0'
+  s.ios.deployment_target = '15.0'
+  s.pod_target_xcconfig = {
+    'IPHONEOS_DEPLOYMENT_TARGET' => '15.0'
+  }
+  
+  s.default_subspec = 'Binary'
+  
+  # 源码模式配置
+  s.subspec 'Source' do |ss|
+    s.source_files = 'MyDemoLib/Classes/**/*'
+    s.resource_bundles = {
+      'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
+      'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
+    }
+  end
+  
+  # 二进制模式配置
+  s.subspec 'Binary' do |ss|
+    ss.vendored_frameworks = 'Framework/MyDemoLib.xcframework'
+    ss.preserve_paths      = 'Framework/*'
+  end
+  
+  
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SnapKit', '5.0.1'
+  s.dependency 'Toast-Swift', '5.0.0'
+  s.dependency 'IQAudioRecorderController', '1.2.3'
+  s.dependency 'IQKeyboardManagerSwift', '6.5.4'
+  s.dependency 'SQLite.swift', '0.12.2'
+  s.dependency 'KeychainSwift', '18.0.0'
+  s.dependency 'Alamofire', '4.9.1'
+  s.dependency 'MBProgressHUD', '1.1.0'
+  
+  
 end

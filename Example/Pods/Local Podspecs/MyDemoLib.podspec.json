@@ -1,0 +1,64 @@
+{
+  "name": "MyDemoLib",
+  "version": "1.0.0",
+  "summary": "A short description of MyDemoLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lidongwei/MyDemoLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lidongwei": "lidongwei@youyueplay.com"
+  },
+  "source": {
+    "git": "https://github.com/lidongwei/MyDemoLib.git",
+    "tag": "1.0.0"
+  },
+  "xcconfig": {
+    "VALID_ARCHS": "armv7 arm64 x86_64"
+  },
+  "requires_arc": true,
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "15.0"
+  },
+  "pod_target_xcconfig": {
+    "IPHONEOS_DEPLOYMENT_TARGET": "15.0"
+  },
+  "source_files": "MyDemoLib/Classes/**/*",
+  "resource_bundles": {
+    "MyDemoLib": [
+      "MyDemoLib/Resources/*.xcassets",
+      "MyDemoLib/Resources/**/*.strings",
+      "MyDemoLib/Resources/PrivacyInfo.xcprivacy"
+    ]
+  },
+  "dependencies": {
+    "SnapKit": [
+      "5.0.1"
+    ],
+    "Toast-Swift": [
+      "5.0.0"
+    ],
+    "IQAudioRecorderController": [
+      "1.2.3"
+    ],
+    "IQKeyboardManagerSwift": [
+      "6.5.4"
+    ],
+    "SQLite.swift": [
+      "0.12.2"
+    ],
+    "KeychainSwift": [
+      "18.0.0"
+    ],
+    "Alamofire": [
+      "4.9.1"
+    ],
+    "MBProgressHUD": [
+      "1.1.0"
+    ]
+  },
+  "swift_version": "5.0"
+}

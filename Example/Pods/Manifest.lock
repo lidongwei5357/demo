@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.9.1)
+  - IQAudioRecorderController (1.2.3):
+    - SCSiriWaveformView
+  - IQKeyboardManagerSwift (6.5.4)
+  - KeychainSwift (18.0.0)
+  - MBProgressHUD (1.1.0)
+  - MyDemoLib (1.0.0):
+    - Alamofire (= 4.9.1)
+    - IQAudioRecorderController (= 1.2.3)
+    - IQKeyboardManagerSwift (= 6.5.4)
+    - KeychainSwift (= 18.0.0)
+    - MBProgressHUD (= 1.1.0)
+    - SnapKit (= 5.0.1)
+    - SQLite.swift (= 0.12.2)
+    - Toast-Swift (= 5.0.0)
+  - SCSiriWaveformView (1.1.2)
+  - SnapKit (5.0.1)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - Toast-Swift (5.0.0)
+
+DEPENDENCIES:
+  - MyDemoLib (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQAudioRecorderController
+    - IQKeyboardManagerSwift
+    - KeychainSwift
+    - MBProgressHUD
+    - SCSiriWaveformView
+    - SnapKit
+    - SQLite.swift
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  MyDemoLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IQAudioRecorderController: 69a67c2e0b87bd8746cbb4de175fd7a0bf820009
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  KeychainSwift: c46e1438d121e47459fb304ac88c5e058a2a91ed
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MyDemoLib: b8fd7b45b418da66ccfa1015c7b71465e1672c00
+  SCSiriWaveformView: 016392911fb442c17d6dbad68e666edb13193c02
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
+
+PODFILE CHECKSUM: 5111d69781abc6abac9bb443df3c6b9a84d15f5d
+
+COCOAPODS: 1.16.2
