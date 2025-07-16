@@ -37,6 +37,14 @@ Pod::Spec.new do |s|
       'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
       'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
     }
+    ss.dependency 'SnapKit', '5.0.1'
+    ss.dependency 'Toast-Swift', '5.0.0'
+    ss.dependency 'IQAudioRecorderController', '1.2.3'
+    ss.dependency 'IQKeyboardManagerSwift', '6.5.4'
+    ss.dependency 'SQLite.swift', '0.12.2'
+    ss.dependency 'KeychainSwift', '18.0.0'
+    ss.dependency 'Alamofire', '4.9.1'
+    ss.dependency 'MBProgressHUD', '1.1.0'
   end
   
   # 二进制模式配置
@@ -51,14 +59,14 @@ Pod::Spec.new do |s|
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'SnapKit', '5.0.1'
-  s.dependency 'Toast-Swift', '5.0.0'
-  s.dependency 'IQAudioRecorderController', '1.2.3'
-  s.dependency 'IQKeyboardManagerSwift', '6.5.4'
-  s.dependency 'SQLite.swift', '0.12.2'
-  s.dependency 'KeychainSwift', '18.0.0'
-  s.dependency 'Alamofire', '4.9.1'
-  s.dependency 'MBProgressHUD', '1.1.0'
+#  s.dependency 'SnapKit', '5.0.1'
+#  s.dependency 'Toast-Swift', '5.0.0'
+#  s.dependency 'IQAudioRecorderController', '1.2.3'
+#  s.dependency 'IQKeyboardManagerSwift', '6.5.4'
+#  s.dependency 'SQLite.swift', '0.12.2'
+#  s.dependency 'KeychainSwift', '18.0.0'
+#  s.dependency 'Alamofire', '4.9.1'
+#  s.dependency 'MBProgressHUD', '1.1.0'
   
   
 end
