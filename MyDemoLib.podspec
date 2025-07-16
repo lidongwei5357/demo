@@ -29,22 +29,25 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     'IPHONEOS_DEPLOYMENT_TARGET' => '15.0'
   }
+ 
   
-  s.dependency 'SnapKit', '5.0.1'
-  s.dependency 'Toast-Swift', '5.0.0'
-  s.dependency 'IQAudioRecorderController', '1.2.3'
-  s.dependency 'IQKeyboardManagerSwift', '6.5.4'
-  s.dependency 'SQLite.swift', '0.12.2'
-  s.dependency 'KeychainSwift', '18.0.0'
-  s.dependency 'Alamofire', '4.9.1'
-  s.dependency 'MBProgressHUD', '1.1.0'
+  s.dependency 'Alamofire'
   
-  s.source_files = 'MyDemoLib/Classes/**/*'
-  s.resource_bundles = {
-    'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
-    'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
-  }
+#  s.dependency 'SnapKit', '5.0.1'
+#  s.dependency 'Toast-Swift', '5.0.0'
+#  s.dependency 'IQAudioRecorderController', '1.2.3'
+#  s.dependency 'IQKeyboardManagerSwift', '6.5.4'
+#  s.dependency 'SQLite.swift', '0.12.2'
+#  s.dependency 'KeychainSwift', '18.0.0'
+#  s.dependency 'Alamofire', '4.9.1'
+#  s.dependency 'MBProgressHUD', '1.1.0'
   
+#  s.source_files = 'MyDemoLib/Classes/**/*'
+#  s.resource_bundles = {
+#    'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
+#    'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
+#  }
+#  
   # 使用了:path或:git直接引用源码时可能忽略默认子规范‌
 #  s.default_subspec = 'Lib'
   
