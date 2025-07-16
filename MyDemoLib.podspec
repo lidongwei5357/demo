@@ -30,43 +30,43 @@ Pod::Spec.new do |s|
     'IPHONEOS_DEPLOYMENT_TARGET' => '15.0'
   }
   
-  # 源码模式配置
-  s.subspec 'Source' do |ss|
-    ss.source_files = 'MyDemoLib/Classes/**/*'
-    ss.resource_bundles = {
-      'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
-      'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
-    }
-    ss.dependency 'SnapKit', '5.0.1'
-    ss.dependency 'Toast-Swift', '5.0.0'
-    ss.dependency 'IQAudioRecorderController', '1.2.3'
-    ss.dependency 'IQKeyboardManagerSwift', '6.5.4'
-    ss.dependency 'SQLite.swift', '0.12.2'
-    ss.dependency 'KeychainSwift', '18.0.0'
-    ss.dependency 'Alamofire', '4.9.1'
-    ss.dependency 'MBProgressHUD', '1.1.0'
-  end
+  s.dependency 'SnapKit', '5.0.1'
+  s.dependency 'Toast-Swift', '5.0.0'
+  s.dependency 'IQAudioRecorderController', '1.2.3'
+  s.dependency 'IQKeyboardManagerSwift', '6.5.4'
+  s.dependency 'SQLite.swift', '0.12.2'
+  s.dependency 'KeychainSwift', '18.0.0'
+  s.dependency 'Alamofire', '4.9.1'
+  s.dependency 'MBProgressHUD', '1.1.0'
   
-  # 二进制模式配置
-  s.subspec 'Lib' do |ss|
-    ss.vendored_frameworks = 'Framework/MyDemoLib.xcframework'
-    ss.preserve_paths      = 'Framework/*'
-  end
+  s.source_files = 'MyDemoLib/Classes/**/*'
+  s.resource_bundles = {
+    'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
+    'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
+  }
   
   # 使用了:path或:git直接引用源码时可能忽略默认子规范‌
-  s.default_subspec = 'Lib'
+#  s.default_subspec = 'Lib'
+  
+  # 源码模式配置
+#  s.subspec 'Source' do |ss|
+#    ss.source_files = 'MyDemoLib/Classes/**/*'
+#    ss.resource_bundles = {
+#      'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
+#      'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
+#    }
+#  end
+  
+  # 二进制模式配置
+#  s.subspec 'Lib' do |ss|
+#    ss.vendored_frameworks = 'Framework/MyDemoLib.xcframework'
+#    ss.preserve_paths      = 'Framework/*'
+#  end
   
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-#  s.dependency 'SnapKit', '5.0.1'
-#  s.dependency 'Toast-Swift', '5.0.0'
-#  s.dependency 'IQAudioRecorderController', '1.2.3'
-#  s.dependency 'IQKeyboardManagerSwift', '6.5.4'
-#  s.dependency 'SQLite.swift', '0.12.2'
-#  s.dependency 'KeychainSwift', '18.0.0'
-#  s.dependency 'Alamofire', '4.9.1'
-#  s.dependency 'MBProgressHUD', '1.1.0'
+
   
   
 end
