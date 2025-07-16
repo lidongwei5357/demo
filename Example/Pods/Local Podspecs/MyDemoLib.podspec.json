@@ -1,6 +1,6 @@
 {
   "name": "MyDemoLib",
-  "version": "3.0.0",
+  "version": "2.2.2",
   "summary": "A short description of MyDemoLib.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/lidongwei/MyDemoLib",
@@ -11,7 +11,7 @@
   "authors": "lidongwei",
   "source": {
     "git": "https://github.com/lidongwei5357/demo.git",
-    "tag": "3.0.0"
+    "tag": "2.2.2"
   },
   "xcconfig": {
     "VALID_ARCHS": "armv7 arm64 x86_64"
@@ -52,7 +52,6 @@
       "MyDemoLib/Resources/PrivacyInfo.xcprivacy"
     ]
   },
-  "default_subspecs": "Lib",
   "platforms": {
     "osx": null,
     "ios": null,
@@ -60,23 +59,5 @@
     "visionos": null,
     "watchos": null
   },
-  "subspecs": [
-    {
-      "name": "Source",
-      "source_files": "MyDemoLib/Classes/**/*",
-      "resource_bundles": {
-        "MyDemoLib": [
-          "MyDemoLib/Resources/*.xcassets",
-          "MyDemoLib/Resources/**/*.strings",
-          "MyDemoLib/Resources/PrivacyInfo.xcprivacy"
-        ]
-      }
-    },
-    {
-      "name": "Lib",
-      "vendored_frameworks": "Framework/MyDemoLib.xcframework",
-      "preserve_paths": "Framework/*"
-    }
-  ],
   "swift_version": "5.0"
 }

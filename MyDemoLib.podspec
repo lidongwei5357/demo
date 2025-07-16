@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyDemoLib'
-  s.version          = '2.2.2'
+  s.version          = '3.3.3'
   s.summary          = 'A short description of MyDemoLib.'
   
   s.description      = <<-DESC
@@ -34,7 +34,11 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '4.9.1'
   s.dependency 'MBProgressHUD', '1.1.0'
   
- 
+#  s.source_files = 'MyDemoLib/Classes/**/*'
+#  s.resource_bundles = {
+#    'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
+#    'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
+#  }
   
    #源码模式配置
   s.subspec 'Source' do |ss|
@@ -47,12 +51,12 @@ Pod::Spec.new do |s|
   
   # 二进制模式配置
   s.subspec 'Lib' do |ss|
-    ss.vendored_frameworks = 'Framework/MyDemoLib-2.2.2.xcframework'
+    ss.vendored_frameworks = 'Framework/MyDemoLib.xcframework'
     ss.preserve_paths      = 'Framework/*'
   end
   
  
- s.default_subspec = 'Lib'
+ s.default_subspec = 'Source'
   
   
   # s.public_header_files = 'Pod/Classes/**/*.h'

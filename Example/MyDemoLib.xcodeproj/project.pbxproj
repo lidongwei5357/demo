@@ -205,7 +205,6 @@
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MyDemoLib/Lib/MyDemoLib.framework/MyDemoLib",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
