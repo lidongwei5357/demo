@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyDemoLib'
-  s.version          = '1.1.2'
+  s.version          = '2.2.2'
   s.summary          = 'A short description of MyDemoLib.'
   
   s.description      = <<-DESC
@@ -34,8 +34,7 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '4.9.1'
   s.dependency 'MBProgressHUD', '1.1.0'
   
-   #使用了:path或:git直接引用源码时可能忽略默认子规范‌
-  s.default_subspec = 'Lib'
+ 
   
    #源码模式配置
   s.subspec 'Source' do |ss|
@@ -51,6 +50,9 @@ Pod::Spec.new do |s|
     ss.vendored_frameworks = 'Framework/MyDemoLib.xcframework'
     ss.preserve_paths      = 'Framework/*'
   end
+  
+ 
+ s.default_subspec = 'Lib'
   
   
   # s.public_header_files = 'Pod/Classes/**/*.h'

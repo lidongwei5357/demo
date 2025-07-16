@@ -49,7 +49,7 @@ fi
 echo "📦 压缩 xcframework..."
 
 # 4. 生成版本压缩包
-zip -r Framework/$MODULE_NAME-$1.xcframework.zip Framework/$MODULE_NAME.xcframework Framework/$MODULE_NAME.bundle
+zip -r Framework/$MODULE_NAME-$2.xcframework.zip Framework/$MODULE_NAME.xcframework Framework/$MODULE_NAME.bundle
 
 # 5. 更新 podspec 版本
 sed -i '' "s/s.version          = .*/s.version          = '$2'/" $MODULE_NAME.podspec
