@@ -45,7 +45,6 @@ Pod::Spec.new do |s|
     ss.dependency 'KeychainSwift', '18.0.0'
     ss.dependency 'Alamofire', '4.9.1'
     ss.dependency 'MBProgressHUD', '1.1.0'
-    ss.static_framework = true
   end
   
   # 二进制模式配置
