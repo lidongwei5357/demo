@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
   
   # 二进制模式配置
   s.subspec 'Lib' do |ss|
-    ss.vendored_frameworks = 'Framework/MyDemoLib.xcframework'
+    ss.vendored_frameworks = 'Framework/MyDemoLib-#{s.version}.xcframework'
     ss.preserve_paths      = 'Framework/*'
   end
   
