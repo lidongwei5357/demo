@@ -32,8 +32,8 @@ Pod::Spec.new do |s|
   
   # 源码模式配置
   s.subspec 'Source' do |ss|
-    s.source_files = 'MyDemoLib/Classes/**/*'
-    s.resource_bundles = {
+    ss.source_files = 'MyDemoLib/Classes/**/*'
+    ss.resource_bundles = {
       'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
       'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
     }
