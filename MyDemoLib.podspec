@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyDemoLib'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'A short description of MyDemoLib.'
   
   s.description      = <<-DESC
@@ -33,12 +33,6 @@ Pod::Spec.new do |s|
   s.dependency 'KeychainSwift', '18.0.0'
   s.dependency 'Alamofire', '4.9.1'
   s.dependency 'MBProgressHUD', '1.1.0'
-  
-  s.source_files = 'MyDemoLib/Classes/**/*'
-  s.resource_bundles = {
-    'MyDemoLib' => ['MyDemoLib/Resources/*.xcassets','MyDemoLib/Resources/**/*.strings',
-    'MyDemoLib/Resources/PrivacyInfo.xcprivacy']
-  }
   
    #使用了:path或:git直接引用源码时可能忽略默认子规范‌
   s.default_subspec = 'Lib'
