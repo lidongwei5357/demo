@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   }
  
   
-  s.dependency 'Alamofire'
+  pod 'Alamofire', '4.9.1'
   
 #  s.dependency 'SnapKit', '5.0.1'
 #  s.dependency 'Toast-Swift', '5.0.0'
