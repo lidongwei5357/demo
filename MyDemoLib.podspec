@@ -30,8 +30,6 @@ Pod::Spec.new do |s|
     'IPHONEOS_DEPLOYMENT_TARGET' => '15.0'
   }
   
-  s.default_subspec = 'Binary'
-  
   # 源码模式配置
   s.subspec 'Source' do |ss|
     s.source_files = 'MyDemoLib/Classes/**/*'
@@ -46,6 +44,8 @@ Pod::Spec.new do |s|
     ss.vendored_frameworks = 'Framework/MyDemoLib.xcframework'
     ss.preserve_paths      = 'Framework/*'
   end
+  
+  s.default_subspec = 'Binary'
   
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
